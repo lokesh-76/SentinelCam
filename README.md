@@ -1,32 +1,77 @@
-# 📷 Mobile Camera to Desktop Webcam
+# 🛡 SentinelCam
 
-Use your smartphone's camera as a live video feed for your desktop — wirelessly and in real-time. No need for external webcams or expensive gear!
+[![GitHub stars](https://img.shields.io/github/stars/lokesh-76/SentinelCam?style=social)](https://github.com/lokesh-76/SentinelCam/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org/)
 
-## 🚀 Features
-- Stream mobile camera feed to desktop using IP
-- Real-time video capture with low latency
-- Simple UI to display live feed
-- Works over WiFi — no cables needed
+**Your silent protector.**
 
-## 🛠️ Tech Stack
-- Python
-- OpenCV
-- Flask (optional if you want to scale it later)
-- Mobile IP webcam app (like [IP Webcam for Android](https://play.google.com/store/apps/details?id=com.pas.webcam))
+SentinelCam is an intelligent surveillance system built with Python and OpenCV that monitors environments in real-time. It can detect motion, capture events, and provide alerts, ensuring enhanced security for homes, offices, or any space that needs vigilance.
 
-## 🖥️ How It Works
-1. Install an IP camera app on your mobile.
-2. Connect both devices to the same WiFi.
-3. Run the Python script on your desktop.
-4. Enter the mobile's camera stream URL when prompted.
-5. View your mobile feed on your desktop!
+---
 
+## 🚀 Key Features
 
-## 📦 Installation
+- **Real-Time Monitoring**: Continuously monitors the environment using your camera.  
+- **Motion Detection**: Detects and highlights movement in the monitored area.  
+- **Event Capture**: Automatically records video clips or images when motion is detected.  
+- **Alert System**: Sends notifications or saves captured footage for review.  
+- **Customizable Settings**: Adjust sensitivity, storage, and camera options to suit your needs.
 
-```bash
-git clone https://github.com/lokesh-7676/MobileCamera_To_Desktop
-cd MobileCamera_To_Desktop
-pip install -r requirements.txt
-python main.py
+---
 
+## 🛠 Installation
+
+### Prerequisites
+
+- Python 3.x  
+- OpenCV (`opencv-python`)  
+- NumPy  
+- Optional: SMTP library for email alerts
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/lokesh-76/SentinelCam.git
+2. Navigate to the project directory:
+   ```bash 
+   cd SentinelCam
+3. Install dependencies:
+   ```bash 
+   pip install -r requirements.txt
+4. Run the application:
+   ```bash 
+   python sentinel_cam.py
+---
+## 📈 Usage
+
+- Launch the application.
+- The camera will start monitoring the defined area.
+- Motion events are detected and saved to the events folder.
+- Optional: Configure email notifications for real-time alerts.
+---
+## 💡 How SentinelCam Helps in Daily Life
+
+- Home Security: Monitor entrances and critical areas.
+- Office Surveillance: Keep track of your workspace.
+- Event Recording: Automatically capture and store unusual activity.
+- Peace of Mind: Know your space is monitored, even when you’re away.
+---
+## 🤝 Contributing
+
+- We welcome contributions to improve SentinelCam!
+- Fork the repository.
+- Create a new branch (git checkout -b feature-name).
+- Make your changes.
+- Commit your changes (git commit -am 'Add new feature').
+- Push to the branch (git push origin feature-name).
+- Open a Pull Request.
+---
+## 📄 License
+
+- This project is free to use.
+---
+## 🌐 Try It
+
+- Run locally by following the installation steps above.
